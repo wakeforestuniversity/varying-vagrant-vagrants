@@ -457,7 +457,7 @@ Vagrant.configure("2") do |config|
 
   # The Parallels Provider uses a different naming scheme.
   config.vm.provider :parallels do |v, override|
-    override.vm.box = "parallels/ubuntu-18.04"
+    override.vm.box = "bento/ubuntu-18.04"
   end
 
   # The VMware Desktop Provider uses a different naming scheme.

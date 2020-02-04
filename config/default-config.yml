@@ -20,34 +20,34 @@ sites:
 
   # latest version of WordPress, can be used for client work and testing
   # Check the readme at https://github.com/Varying-Vagrant-Vagrants/custom-site-template
-  wordpress-one:
-    skip_provisioning: false
-    description: "A standard WP install, useful for building plugins, testing things, etc"
-    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-    hosts:
-      - one.wordpress.test
-    custom:
-      wpconfig_constants:
-        WP_DEBUG: true
-        WP_DEBUG_LOG: true
-        WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
+  # wordpress-one:
+  #  skip_provisioning: false
+  #  description: "A standard WP install, useful for building plugins, testing things, etc"
+  #  repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+  #  hosts:
+  #    - one.wordpress.test
+  #  custom:
+  #    wpconfig_constants:
+  #      WP_DEBUG: true
+  #      WP_DEBUG_LOG: true
+  #      WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
 
-  wordpress-two:
-    skip_provisioning: false
-    description: "A standard WP install, useful for building plugins, testing things, etc"
-    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-    custom:
-      # locale: it_IT
-      delete_default_plugins: true
-      install_plugins:
-        - query-monitor
-    hosts:
-      - two.wordpress.test
+  # wordpress-two:
+  #  skip_provisioning: false
+  #  description: "A standard WP install, useful for building plugins, testing things, etc"
+  #  repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+  #  custom:
+  #    # locale: it_IT
+  #    delete_default_plugins: true
+  #    install_plugins:
+  #      - query-monitor
+  #  hosts:
+  #    - two.wordpress.test
 
   # The following commented out site configuration will create a standard WordPress
   # site in www/example-site/ available at http://mysite.test.
   # Remember, whitespace is significant! Tabs and spaces mean different things
-  #mysite:
+  # mysite:
   #  description: "My website"
   #  repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
   #  hosts:
@@ -55,28 +55,28 @@ sites:
 
   # The wordpress-develop configuration is useful for contributing to WordPress Core.
   # It uses the built WP to serve the site
-  wordpress-trunk:
-    skip_provisioning: true # provisioning this one takes longer, so it's disabled by default
-    description: "An svn based WP Core trunk dev setup, useful for contributor days, Trac tickets, patches"
-    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template-develop.git
-    hosts:
-      - trunk.wordpress.test
+  # wordpress-trunk:
+  #  skip_provisioning: true # provisioning this one takes longer, so it's disabled by default
+  #  description: "An svn based WP Core trunk dev setup, useful for contributor days, Trac tickets, patches"
+  #  repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template-develop.git
+  #  hosts:
+  #    - trunk.wordpress.test
 
   # The following commented out site configuration will create a environment useful
   # for contributions to the WordPress meta team, .e.g WordCamps, .org, etc:
-  wordpress-meta-environment:
-    skip_provisioning: true # disabled by default, this takes a long time to provision
-    description: "An environment useful for contributions to the WordPress meta team."
-    repo: https://github.com/WordPress/meta-environment.git
-    hosts:
-      - wp-meta.test
-    custom:
-      provision_site:
-        "buddypressorg.test": true
-        "jobs.wordpressnet.test": true
-        "wordcamp.test": true
-        "wordpressorg.test": true
-        "wordpresstv.test": true
+  # wordpress-meta-environment:
+  #  skip_provisioning: true # disabled by default, this takes a long time to provision
+  #  description: "An environment useful for contributions to the WordPress meta team."
+  #  repo: https://github.com/WordPress/meta-environment.git
+  #  hosts:
+  #    - wp-meta.test
+  #  custom:
+  #    provision_site:
+  #      "buddypressorg.test": true
+  #      "jobs.wordpressnet.test": true
+  #      "wordcamp.test": true
+  #      "wordpressorg.test": true
+  #      "wordpresstv.test": true
 
   # The following commented out site configuration will create a standard WordPress
   # site in www/example-site/ available at http://my-example-site.test.
