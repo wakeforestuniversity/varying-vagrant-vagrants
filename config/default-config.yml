@@ -21,7 +21,7 @@ sites:
   multisite-wfu:
     skip_provisioning: false
     description: "A multi-site WP install, using subdomains"
-    repo: https://github.com/wakeforestuniversity/vvv-custom-site-template.git
+    repo: https://github.com/wakeforestuniversity/wordpress-contractor-base.git
     hosts:
       - wfu.test
       - go.wfu.test
@@ -77,7 +77,7 @@ general:
   # set to true to use a synced shared folder for MariaDB database storage
   db_share_type: false
   # GitHub token to use from composer
-  github_token: b6a57444f3313be9bda4cc6f4a7c27b0ce820102
+  github_token:
 
 # Settings for the vagrant plugins supported by VVV
 vagrant-plugins:
