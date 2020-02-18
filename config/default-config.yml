@@ -43,7 +43,7 @@ utilities:
     #- tideways # PHP profiling tool, also installs xhgui check https://varyingvagrantvagrants.org/docs/en-US/references/tideways-xhgui/
     #- php56
     #- php70
-    #- php71
+    - php71
     #- php72
     #- php73
     #- php74
